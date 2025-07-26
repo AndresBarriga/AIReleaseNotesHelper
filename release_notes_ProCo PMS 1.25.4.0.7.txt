@@ -1,0 +1,60 @@
+Release Notes - Version ProCo PMS 1.25.4.0.7
+Features
+TNG4-8497
+Title: ProCo PMS - Profiles exchange for TNG4
+Summary: ```json
+{
+  "key": "TNG4-8497",
+  "title": "ProCo PMS - Profiles exchange for TNG4",
+  "release_note": "This ticket addresses the duplication of profiles created in TNG3 to Sonata, outlining necessary discussions and potential solutions for the implementation.",
+  "key_features": [
+    "Facilitates synchronization of profiles between TNG3 and Sonata.",
+    "Identifies need for discussions with TNG3 team for effective implementation.",
+    "Explores options for Field Value Mapping between TNG4 and TNG3, including potential hardcoding solutions."
+  ]
+}
+```
+Bug Fixes
+TNG4-10791
+Title: Integration - TNG3 PMSInfo - CurrencyISO fallback for v1
+Summary: ```json
+{
+  "key": "TNG4-10791",
+  "title": "Integration - TNG3 PMSInfo - CurrencyISO fallback for v1",
+  "release_note": "This update addresses an issue with the TNG3 PMSInfo integration by implementing a fallback for the CurrencyISO parameter, enabling successful posting to the ProCoPMS v1 endpoint.",
+  "key_features": [
+    "Implemented CurrencyISO fallback for v1 endpoint",
+    "Ensured successful posting for the example transaction to ProCoPMS",
+    "Enhanced integration reliability between TNG3 and PMS systems"
+  ]
+}
+```
+Improvements
+TNG4-10560
+Title: [BE]Proco-PMS - enhance Profile gender parsing 
+Summary: ```json
+{
+  "key": "TNG4-10560",
+  "title": "[BE]Proco-PMS - enhance Profile gender parsing",
+  "release_note": "This update enhances the Profile gender parsing functionality by allowing the system to intelligently interpret gender values from Opera, improving accuracy in gender representation.",
+  "key_features": [
+    "Improved parsing of gender values such as {{M}} and {{Male}}.",
+    "Support for additional values including {{F}} / {{Female}} and {{U}} / {{Unknown}}.",
+    "Smarter parsing logic to enhance user profile accuracy."
+  ]
+}
+```
+TNG4-10606
+Title: [BE] Proco-PMS - Enhance the logic on Proco side for parsing the request from Opera
+Summary: ```json
+{
+  "key": "TNG4-10606",
+  "title": "[BE] Proco-PMS - Enhance the logic on Proco side for parsing the request from Opera",
+  "release_note": "Enhanced the logic on the Proco side to preprocess gender values sent from Opera, ensuring consistent responses by converting 'M' to 'Male', 'F' to 'Female', and 'U' to 'Unknown'.",
+  "key_features": [
+    "Improved handling of gender values in API responses.",
+    "Standardized gender values for consistency across systems.",
+    "Preprocessing logic implemented for enhanced data integrity."
+  ]
+}
+```
